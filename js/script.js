@@ -16,5 +16,4 @@ function calculate () {
   // process
   const area = ("height-of-triangle" * height) / 2
   const perimeter = "length1-of-triangle" + "length2-of-trapazoid" + "length3-of-triangle"
-
-  
+}
