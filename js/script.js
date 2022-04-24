@@ -8,12 +8,16 @@
  */
 function calculate () {
   // input
-  const A = parseInt(document.getElementById('length1-of-trapazoid').value)
-  const B = parseInt(document.getElementById('length2-of-trapazoid').value)
-  const C = parseInt(document.getElementById('length3-of-trapazoid').value)
+  const lineA = parseInt(document.getElementById('length1-of-trapazoid').value)
+  const lineB = parseInt(document.getElementById('length2-of-trapazoid').value)
+  const lineC = parseInt(document.getElementById('length3-of-trapazoid').value)
   const height = parseInt(document.getElementById('height-of-trapazoid').value)
 
   // process
-  const area = ("height-of-triangle" * height) / 2
-  const perimeter = "length1-of-triangle" + "length2-of-trapazoid" + "length3-of-triangle"
+  const area = (lineB * height) / 2
+  const perimeter = lineA + lineB + lineC
+
+  // output
+  document.getElementById('area').innerHTML = "Area is: " + area + " cm²"
+  document.getElementById('perimeter').innerHTML = "Perimeter is: " + perimeter + " cm"
 }
