@@ -16,5 +16,5 @@ function calculate() {
   const area = ((lineA * lineB) / 2) * (height)
 
   // output
-  document.getElementById('area').innerHTML = "Area is: " + area + " cm²
+  document.getElementById('area').innerHTML = "Area is: " + area + " cm²"
 }
