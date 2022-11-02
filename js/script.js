@@ -10,15 +10,11 @@ function calculate () {
   // input
   const lineA = parseInt(document.getElementById('length1-of-trapazoid').value)
   const lineB = parseInt(document.getElementById('length2-of-trapazoid').value)
-  const lineC = parseInt(document.getElementById('length3-of-trapazoid').value)
-  const lineD = parseInt(document.getElementById('length4-of-trapazoid').value)
   const height = parseInt(document.getElementById('height-of-trapazoid').value)
 
   // process
   const area = ((lineA * lineB) / 2) * (height)
-  const perimeter = lineA + lineB + lineC + lineD
 
   // output
-  document.getElementById('area').innerHTML = "Area is: " + area + " cm²"
-  document.getElementById('perimeter').innerHTML = "Perimeter is: " + perimeter + " cm"
+  document.getElementById('area').innerHTML = "Area is: " + area + " cm²
 }
